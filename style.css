@@ -1,0 +1,149 @@
+body{
+    background-color: #EBEBEB;
+    color:#7D7D7E;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+section{
+    background-color: white;
+    border-radius: 6px;
+    border-left: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+section h1{
+    color: #DD5555;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: -10px;
+    padding-bottom: 0;
+}
+
+section h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+section p{
+    text-align: justify;
+}
+
+.head figure img{
+    border-radius: 50%;
+    border: 4px solid #CCCCCC;
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head p.centered{
+    text-align: center;
+    font-weight: 700;
+}
+
+.head a{
+    background-color: #DD5555;
+    border-radius: 8px;
+    color: white;
+
+    padding: 10px 10px;
+    
+    text-decoration: none;  
+}
+
+.head a:hover{
+    background-color: #782E2E;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.social a{
+    color: #CDCDCD;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.social a:hover{
+    color: #787878;
+}
+
+.fa{
+    font-size: 2rem;
+}
+
+.movies article{
+    display: grid;
+
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+}
+
+.movies article figure{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    
+    padding: 0;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.movies article figure img{
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+}
+
+.movies article .text{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.movies article .text h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .movies article{
+        display: grid;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    .movies article figure{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        
+        padding: 0;
+        margin: auto;
+    }
+    .movies article .text{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+  }
